@@ -30,6 +30,15 @@ We use a simple *feedforward neural network*:
 
 ---
 
+## Learnings
+1. Loss tells us how far off the predictions were from the actual labels
+2. Optimizer acts like the brain and aims on imporiving the predictions ,"adam" here
+3. A neuron is a mathematical function that takes inputs assigns them weights ,adds a bias and finally passes them through an activation function
+4. keras.sequential adds layers sequentially which contain input hidden and output layers ,input layer essentially flatttens the 2d arrays and output layer gives output in desired number of neurons
+   
+
+
+
 ## ⚙ Training Setup
 We compile the model with:
 
@@ -39,3 +48,6 @@ model.compile(
     loss='sparse_categorical_crossentropy',  # Measures prediction error
     metrics=['accuracy']  # Tracks model performance
 )
+
+
+
